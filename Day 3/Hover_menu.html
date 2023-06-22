@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>CSS Hover Element - Selector OR Child Combinator</title>
+		<style type="text/css">
+			#MainUL li ul li{display:none;}
+			#MainUL li:hover ul li{display:block;}
+			#MainUL li:hover ul li ul li{display:none;}
+			#MainUL li ul li:hover ul li{display:block;}
+			#MainUL li ul li:hover ul li ul li{display:none;}
+			#MainUL li ul li ul li:hover ul li{display:block;}
+		</style>
+		
+	</head>
+	<body>
+		
+		<ul id="MainUL">
+			<li>Computer Language
+				<ul>
+					<li>Low level Language
+						<ul>
+							<li style="color:red ;">Machine Language
+							<ul>
+								<li> 0's and 1's</li>
+							</ul></li>
+							<li style="color:rgb(52, 34, 156) ;"> Assembly Language
+								<ul>
+									<li> ADD A, SUB B</li>
+								</ul></li>
+							</li>
+						</ul>
+					</li>
+					<li>High level Language
+						<ul>
+							<li>C</li>
+							<li>C++</li>	
+							<li>PYTHON</li>
+							<li>PHP</li>
+							<li>JAVA</li>
+							<li></li>									
+						</ul>
+					</li>
+					
+					
+					

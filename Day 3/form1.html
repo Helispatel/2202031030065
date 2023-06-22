@@ -1,0 +1,117 @@
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="list.html">
+        <table border="2px" style="margin-left: 40%; margin-top: 5%;">
+            <tr>
+                <td>Firstname:</td>
+                <td><input type="text" value="" placeholder="Enter Your FirstName" required></td>
+            </tr>
+            <tr>
+                <td>middlename:</td>
+                <td><input type="text" value="" placeholder="Enter Your LastName" required></td>
+            </tr>
+            <tr>
+                <td>Lastname:</td>
+                <td><input type="text" value="" placeholder="Enter Your LastName" required></td>
+            </tr>
+            <tr>
+                <td>
+                    CurrentAddress:
+                </td>
+                <td>
+                    <textarea rows="4" cols="30" id="txt_1" name="txt_1" placeholder="Enter your address" required></textarea>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Permenent Address:
+                </td>
+                <td>
+                    <textarea rows="4" cols="30" id="txt_1" name="txt_1" placeholder="Enter your address" required></textarea>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Pincode:</td>
+                <td>
+                    <input type="number" placeholder="Enter Your Pincode" maxlength="6" minlength="0" max="6" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" value="" placeholder="Enter Your Email" required></td>
+            </tr>
+            <tr>
+                <td>Phonenumber:</td>
+                <td><input type="number" value="" placeholder="Enter Your number" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gen_1" required>Male
+                    <input type="radio" name="gen_1" required>Female
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>
+                    <input type="number" placeholder="Enter Your Age" required>
+                </td>
+            </tr>
+            <tr>
+                <td>DOB:</td>
+                <td>
+                    <input type="date" id="dob_1" name="dob_1" required>
+                </td>
+            </tr>
+            <tr>
+                <td>ProfileUpload:</td>
+                <td>
+                    <input type="file" id="dob_1" name="dob_1" accept=".txt" required>
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" value="" placeholder="Enter Your Password" required></td>
+            </tr>
+            <tr>
+            <tr>
+                <td>ConfirmPassword:</td>
+                <td><input type="password" value="" placeholder="Enter Your confirmPassword" required></td>
+            </tr>
+            <tr>
+                <td>Enter your Nick Name:</td>
+                <td><input type="text" placeholder="Enter Your Answer" required></td>
+            </tr>
+            <td>Are Your Aggree?</td>
+            <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1">Agree</label>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2">Not Agree</label>
+            </td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><select name="City" id="city">
+                        <option value="volvo">Ahmedabad</option>
+                        <option value="saab">Surat</option>
+                        <option value="mercedes">Vadodara</option>
+                        <option value="audi">Kutch</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
