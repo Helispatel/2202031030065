@@ -1,0 +1,235 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    label{
+        font-size: x-large;
+    }
+    input{
+        font-size: x-large;
+    }
+</style>
+<body>
+    <table border="1">
+    <form>
+        
+
+            <tr>
+                <td>
+				<i class="fa fa-user fa-1x"></i> 
+                    <label>First Name</label>
+                </td>
+                <td>
+				
+                    <input type="text" id="txtFirstName" placeholder="First Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+				 <i class="fa fa-user fa-1x"></i> 
+                    <label>Middle Name</label>
+                </td>
+                <td>
+				 
+                    <input type="text" id="txtMiddleName" placeholder="Middle Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<i class="fa fa-user fa-1x"></i> 
+                    <label>Last Name</label>
+                </td>
+                <td>
+				
+                    <input type="text" id="txtLastName" placeholder="Last Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<i class="fa fa-envelope fa-1x"></i> 
+                    <label>Email</label>
+                </td>
+                <td>
+                    <input type="email" placeholder="Email" id="Email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<i class="fa fa-phone fa-1x"></i> 
+                    <label>Phone Number</label>
+                </td>
+                <td>
+                    <input type="number" id="Phone" placeholder="Phone Number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<i class="fa fa-user-o fa-1x"></i> 
+                <label>Gender</label>
+            </td>
+            <td><i class="fa fa-solid fa-male"></i>
+                <input type="radio" name="gender" id="Gender" value="Male">Male
+				<i class="fa fa-solid fa-female"></i>
+                <input type="radio" name="gender" id="Gender" value="Female">Female
+				<i class="fa fa-solid fa-transgender"></i>
+				<input type="radio" name="gender" id="Gender" value="transgender">transgender
+            </td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-smile-o"></i>
+                    <label>Age</label>
+                </td>
+                <td>
+                    <input type="tel" placeholder="Age" id="Age" max="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<i class="fa fa-calendar-o fa-1x"></i>
+                    <label>Date of Birth</label>
+                </td>
+                <td>
+                    <input type="date" id="DOB">
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<i class="fa fa-upload fa-1x"></i>
+                    <label>Upload CV</label>
+                </td>
+                <td>
+                    <input type="file" id="File">
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<i class="fa fa-cutlery fa-1x"></i>
+                    <label>What is your favourite food?</label>
+                </td>
+                <td>
+                    <input type="text" id="FavFood" placeholder="Favourite Food">
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<i class="fa fa-bookmark fa-1x"></i>
+                    <label>What is your hobby?</label>
+                </td>
+                <td>
+                    <input type="text" id="Hobby" placeholder="Hobby">
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<i class="fa fa-unlock fa-1x"></i>
+                    <label>Password</label>
+                </td>
+                <td>
+                    <input type="password" id="Password" placeholder="Password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<i class="fa fa-key fa-1x"></i>
+                    <label>Confirm Password</label>
+                </td>
+                <td>
+                    <input type="password" id="CPassword" placeholder="Confirm Password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<i class="fa fa-address-card fa-1x"></i>
+                    <label>Address</label>
+                </td>
+                <td>
+                    <textarea id="Address" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<i class="fa fa-map-pin fa-1x"></i>
+                    <label>Pincode</label>
+                </td>
+                <td>
+                    <input type="tel" id="Pincode" placeholder="Pincode" maxlength="6">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+				<i class="fa fa-check fa-1x"></i>
+                    <input type="checkbox" id="T&C">
+                    <label>Accept our T&C?</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+                </td>
+            </tr>
+
+        
+    </form>
+</table>
+</body>
+
+</html>
+
+<script>
+     let saveFile = () => {
+            // Get the data from each element on the form.
+            const firstName = document.getElementById("txtFirstName");
+            const lastName = document.getElementById("txtLastName");
+            const middleName = document.getElementById("txtMiddleName");
+            const email = document.getElementById("Email");
+            const phone = document.getElementById("Phone");
+            const gender = document.getElementById("Gender");
+            const age = document.getElementById("Age");
+            const dob = document.getElementById("DOB");
+            const favfood = document.getElementById("FavFood");
+            const hobby = document.getElementById("Hobby");
+            const password = document.getElementById("Password");
+            const confirmpassword = document.getElementById("CPassword");
+            const address = document.getElementById("Address");
+            const pincode = document.getElementById("Pincode");
+            const tc = document.getElementById("T&C");
+            const file = document.getElementById("File");
+
+            // This variable stores all the data.
+            let data = "\r First Name: " + firstName.value + " \r\n " + "Middle Name: " + middleName.value + " \r\n " + "Last Name: " + lastName.value + " \r\n " + "Email: " + email.value + " \r\n " + "Phone: " + phone.value + " \r\n " + "Gender: " + gender.value + " \r\n " + "Age: " + age.value + " \r\n " + "Date of Birth: " + dob.value + " \r\n " + "Question 1: " + favfood.value + " \r\n " + "Hobby: " + hobby.value + " \r\n " + "Password: " + password.value + " \r\n " + "Confirm Password: " + confirmpassword.value + " \r\n " + "Address: " + address.value + " \r\n " + "Pincode: " + pincode.value + " \r\n " + "T&C: " + tc.value + " \r\n " + "File: " + file.value;
+            console.log(data); //printing form data into the console
+            // Convert the text to BLOB.
+            const textToBLOB = new Blob([data], { type: "text/plain" });
+            var filename = new Date();
+            var month =new Date(); //months from 1-12
+            month = month.getMonth();
+
+            var day = new Date();
+            var day = day.getUTCDate();
+
+            var year = new Date();
+            var year = year.getUTCFullYear();
+
+            newdate = year + "/" + month + "/" + day;
+            const sFileName = filename; // The file to save the data.
+
+            let newLink = document.createElement("a");
+            newLink.download = new Date();
+
+            if (window.webkitURL != null) {
+                newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+            } else {
+                newLink.href = window.URL.createObjectURL(textToBLOB);
+                newLink.style.display = "none";
+                document.body.appendChild(newLink);
+            }
+
+            newLink.click();
+        };
+</script>
