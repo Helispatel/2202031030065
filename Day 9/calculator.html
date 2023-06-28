@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <div class="result">
+      <input type="text" id="result">
+    </div>
+    <div>
+      <input type="button" class="btn" value="+" onclick="appendValue('+')">
+      <input type="button" class="btn" value="-" onclick="appendValue('-')">
+      <input type="button" class="btn" value="*" onclick="appendValue('*')">
+      <input type="button" class="btn" value="/" onclick="appendValue('/')">
+      <input type="button" class="btn" value="=" onclick="calculate()">
+    </div>
+  </div>
+
+  <script>
+    function appendValue(value) {
+      document.getElementById("result").value += value;
+    }
+
+    function calculate() {
+      try {
+        const result = eval(document.getElementById("result").value);
+        document.getElementById("result").value = result;
+      } catch (error) {
+        document.getElementById("result").value = "Error";
+      }
+    }
+
+  </script>
+</body>
+</html>
