@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Select a new fruit from the list.</p>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="Apple">Apple</option>
+  <option value="Banana">Banana</option>
+  <option value="Mango">Mango</option>
+  <option value="Black currant">Black currant</option>
+</select>
+
+<p>When you select a new fruit, a function is triggered which outputs the value of the selected fruit.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
+
+</body>
+</html>

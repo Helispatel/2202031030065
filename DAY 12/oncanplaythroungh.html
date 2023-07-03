@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+<h1>HTML DOM Events</h1>
+<h2>The oncanplaythrough</h2>
+
+<video controls oncanplaythrough="myFunction()">
+  <source src="C:\Users\VRAJ PATEL\Documents\all html\mixkit-dog-catches-a-ball-in-a-river-1494-medium.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Can play through without stopping.";
+}
+</script>
+
+</body> 
+</html>

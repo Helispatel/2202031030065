@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:black;width:90px;height:20px;padding:40px;color: aliceblue;">
+Click Me</div><br><br>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:black;width:120px;height:20px;padding:40px;color: aliceblue;">
+Mouse Over Me</div>
+
+
+<script>
+function mDown(obj) {
+  obj.style.backgroundColor = "black";
+  obj.innerHTML = "Release Me";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="black";
+  obj.innerHTML="Thank You";
+}
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+</script>
+
+</body>
+</html> 
