@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Booking Feedback Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Flight Booking Feedback</h1>
+  <form id="feedbackForm">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="flightNo">Flight Number:</label>
+      <input type="text" id="flightNo" name="flightNo" required>
+    </div>
+    <div>
+      <label for="pnrNo">PNR Number:</label>
+      <input type="text" id="pnrNo" name="pnrNo" required>
+    </div>
+    <label for="Please Rate Us">Please Rate Us :</label>
+    <div>
+        
+        <div class="rating">
+          <input value="5" name="rating" id="star5" type="radio" required>
+          <label for="star5"></label>
+          <input value="4" name="rating" id="star4" type="radio" required>
+          <label for="star4"></label>
+          <input value="3" name="rating" id="star3" type="radio" required>
+          <label for="star3"></label>
+          <input value="2" name="rating" id="star2" type="radio" required>
+          <label for="star2"></label>
+          <input value="1" name="rating" id="star1" type="radio" required>
+          <label for="star1"></label>
+          </div>
+    </div>
+    <div>
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" required></textarea>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
